@@ -6,6 +6,8 @@ name: gpu-sim
 # hardware-specific behavior or timing, so it complements runs on real GPUs.
 on:
   workflow_dispatch:
+  push:
+    branches: [verify-gpu-sim]
   pull_request:
     paths:
       - "src/**"
